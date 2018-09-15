@@ -16,5 +16,4 @@ def largest_palendrome(digits):
     return largest
 
 if __name__ == '__main__':
-    i, j = largest_palendrome(3)
-    print(i,j, i*j)
+    print(largest_palendrome(3))
