@@ -6,13 +6,15 @@ def ispalendrome(num):
 
 def largest_palendrome(digits):
     max_num = 10**(digits)-1
+    min_num = 10**(digits-1)
     largest = 0
-    for i in range(max_num, 1, -1):
-        for j in range(max_num, 1, -1):
-            print(i, j)
-            if ispalendrome(i*j):
-                if i*j > largest:
-                    largest = i*j
+    for i in range(max_num, min_num, -1):
+        for j in range(max_num, min_num, -1):
+            result = i*j
+            if result > largest:
+                if ispalendrome(result):
+                    largest = result
+                    print(largest)
     return largest
 
 if __name__ == '__main__':
