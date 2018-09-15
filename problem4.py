@@ -9,7 +9,7 @@ def largest_palendrome(digits):
     min_num = 10**(digits-1)
     largest = 0
     for i in range(max_num, min_num, -1):
-        for j in range(max_num, min_num, -1):
+        for j in range(i, min_num, -1):
             result = i*j
             if result > largest:
                 if ispalendrome(result):
