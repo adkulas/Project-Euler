@@ -20,3 +20,20 @@ def lowest_common_multiple(top_num):
 
 if __name__ == '__main__':
     print(lowest_common_multiple(20))
+
+''' 
+Performance results
+===================
+    In [9]: %%timeit
+    ...: %run problem5.py
+    ...:
+    232792560
+    232792560
+    232792560
+    232792560
+    232792560
+    232792560
+    232792560
+    232792560
+    2.98 s ± 11.9 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+'''
