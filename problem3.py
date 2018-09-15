@@ -16,5 +16,5 @@ def factorizer(num):
 num1 = 13195
 num2 = 600851475143
 factors = []
-factorizer(num1)
+factorizer(num2)
 print(sorted(set(factors)))
