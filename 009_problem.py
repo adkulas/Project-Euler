@@ -9,13 +9,11 @@ Find the product abc.
 """
 
 # Reduce the problem from 3 unknowns to 2 unknowns using substitution
-# 3. 2ab + 2000a + 2000b = 1000000
-# 3. x (1/a) -> 2b + 2000 + 2000b/a = 1000000 /a
-# solve for b 3. -> b = 1000 * (500 - a)/(a+1000)
-
+# 3. 2000a + 2000b -2ab = 1000000
+# solve for b 3. -> b = 1000 * (a-500)/(a-1000)
 
 def solve_for_b_c(a):
-    b = 1000 * (500 - a)/(a+1000)
+    b = 1000 * (a-500)/(a-1000)
     c = 1000 - a - b
     return b, c
 
