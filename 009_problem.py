@@ -30,4 +30,5 @@ if __name__ == '__main__':
         if is_natural(b):
             break
     print(f'The value of a is {a}, b is {b} and c is {c}')
+    print(f'The product of abc is {a*b*c}')
 
