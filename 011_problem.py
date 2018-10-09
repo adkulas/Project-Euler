@@ -54,8 +54,8 @@ numbers = [[int(x) for x in row] for row in numbers]
 
 matrix = np.array(numbers)
 prod = 0
-for i in range(20):
-    for j in range(20):
+for i in range(matrix.shape[0]):
+    for j in range(matrix.shape[1]):
         horiz = matrix[i, j:j+4].prod()
         vert = matrix[i:i+4, j].prod()
         diag1 = matrix[i:i+4, j:j+4].diagonal().prod()
